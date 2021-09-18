@@ -36,7 +36,7 @@ class GSuiteAlertsCollector(object):
         self.alertcli = self.get_alert_client()
 
     def get_current_dir(self):
-        cur_dir = os.path.dirname(__file__)
+        cur_dir = os.getcwd()
         return cur_dir
 
     def get_credentials(self):
